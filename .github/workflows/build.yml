@@ -1,63 +1,61 @@
 name: Build APK
 
 on:
-  push:
   workflow_dispatch:
-    inputs:
-      XRAY_CORE_VERSION:
-        description: 'Xray core version or commit hash'
-        required: false
-
+  push:
+    branches:
+      - master
+  #pull_request:
+    #branches:
+      #- master
 
 jobs:
+
   build:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
 
-    - name: Setup Java
-      uses: actions/setup-java@v4
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Java JDK
+      uses: actions/setup-java@v3.12.0
       with:
-        distribution: 'temurin'
         java-version: '17'
-
-    - name: Setup Golang
-      uses: actions/setup-go@v5
+        distribution: 'temurin'
+    
+    - name: Setup Android NDK
+      uses: nttld/setup-ndk@v1.2.0
+      id: setup-ndk
       with:
-        go-version: '1.22.2'
-
-    - name: Install gomobile
+        ndk-version: r26b
+        add-to-path: false
+    
+    - name: Build Release
+      env:
+        KEYSTORE_PATH: "../key.jks"
+        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: |
-        go install golang.org/x/mobile/cmd/gomobile@latest
-        echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
-
-
-    - name: Setup Android environment
-      uses: android-actions/setup-android@v3
-
-
-    - name: Build dependencies
-      run: |
-        mkdir ${{ github.workspace }}/build
-        cd ${{ github.workspace }}/build
-        git clone --depth=1 -b main https://github.com/2dust/AndroidLibXrayLite.git
-        cd AndroidLibXrayLite
-        go get github.com/xtls/xray-core@${{ github.event.inputs.XRAY_CORE_VERSION }} || true
-        gomobile init
-        go mod tidy -v
-        gomobile bind -v -androidapi 19 -ldflags='-s -w' ./
-        cp *.aar ${{ github.workspace }}/V2rayNG/app/libs/
-
-    - name: Build APK
-      run: |
-        cd ${{ github.workspace }}/V2rayNG
-        chmod 755 gradlew
-        ./gradlew assembleDebug
-
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
+        cd V2rayNG/app/libs
+        rm -f libv2ray.aar
+        wget -O libv2ray.aar https://github.com/SonzaiEkkusu/AndroidLibXrayLite/releases/download/release/libv2ray.aar
+        cd ../..
+        sed -i 's/org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8/org.gradle.jvmargs=-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8/' ${{ github.workspace }}/V2rayNG/gradle.properties
+        chmod +x ./gradlew
+        echo "ndk.dir=${ANDROID_NDK_HOME}" >> local.properties
+        ./gradlew assembleRelease
+    
+    - uses: actions/upload-artifact@v3.1.1
       with:
-        name: apk
-        path: ${{ github.workspace }}/V2rayNG/app/build/outputs/apk/debug/
+        name: APKs
+        path: /home/runner/work/v2rayNG/v2rayNG/V2rayNG/app/build/outputs/apk/release/*.apk
+
+    - name: Upload apk to release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag: ${{ github.ref_name }}
+        tag_name: release
+        files: /home/runner/work/v2rayNG/v2rayNG/V2rayNG/app/build/outputs/apk/release/*.apk
