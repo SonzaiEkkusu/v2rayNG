@@ -1,13 +1,13 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityLogcatBinding
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.AngConfigManager
+import com.xray.ang.AppConfig
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivityLogcatBinding
+import com.xray.ang.extension.toast
+import com.xray.ang.util.AngConfigManager
 import java.net.URLDecoder
 
 class UrlSchemeActivity : BaseActivity() {

@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.os.Handler
 import android.os.Looper
@@ -8,11 +8,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.lifecycleScope
-import com.v2ray.ang.AppConfig.ANG_PACKAGE
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityLogcatBinding
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig.ANG_PACKAGE
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivityLogcatBinding
+import com.xray.ang.extension.toast
+import com.xray.ang.util.Utils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

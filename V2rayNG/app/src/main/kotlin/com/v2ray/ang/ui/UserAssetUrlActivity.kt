@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,12 +7,12 @@ import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityUserAssetUrlBinding
-import com.v2ray.ang.dto.AssetUrlItem
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivityUserAssetUrlBinding
+import com.xray.ang.dto.AssetUrlItem
+import com.xray.ang.extension.toast
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 import java.io.File
 
 class UserAssetUrlActivity : BaseActivity() {

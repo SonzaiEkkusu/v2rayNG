@@ -1,4 +1,4 @@
-package com.v2ray.ang.service
+package com.xray.ang.service
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -14,18 +14,18 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.ANG_PACKAGE
-import com.v2ray.ang.AppConfig.TAG_DIRECT
-import com.v2ray.ang.R
-import com.v2ray.ang.dto.ServerConfig
-import com.v2ray.ang.extension.toSpeedString
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.ui.MainActivity
-import com.v2ray.ang.util.MessageUtil
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
-import com.v2ray.ang.util.V2rayConfigUtil
+import com.xray.ang.AppConfig
+import com.xray.ang.AppConfig.ANG_PACKAGE
+import com.xray.ang.AppConfig.TAG_DIRECT
+import com.xray.ang.R
+import com.xray.ang.dto.ServerConfig
+import com.xray.ang.extension.toSpeedString
+import com.xray.ang.extension.toast
+import com.xray.ang.ui.MainActivity
+import com.xray.ang.util.MessageUtil
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
+import com.xray.ang.util.V2rayConfigUtil
 import go.Seq
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

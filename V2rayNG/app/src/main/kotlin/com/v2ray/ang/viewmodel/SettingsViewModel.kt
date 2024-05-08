@@ -1,4 +1,4 @@
-package com.v2ray.ang.viewmodel
+package com.xray.ang.viewmodel
 
 import android.app.Application
 import android.content.SharedPreferences
@@ -6,9 +6,9 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.preference.PreferenceManager
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 
 class SettingsViewModel(application: Application) : AndroidViewModel(application),
     SharedPreferences.OnSharedPreferenceChangeListener {

@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -11,16 +11,16 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.ANG_PACKAGE
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityBypassListBinding
-import com.v2ray.ang.dto.AppInfo
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.extension.v2RayApplication
-import com.v2ray.ang.util.AppManagerUtil
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig
+import com.xray.ang.AppConfig.ANG_PACKAGE
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivityBypassListBinding
+import com.xray.ang.dto.AppInfo
+import com.xray.ang.extension.toast
+import com.xray.ang.extension.v2RayApplication
+import com.xray.ang.util.AppManagerUtil
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import rx.android.schedulers.AndroidSchedulers

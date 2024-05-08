@@ -1,4 +1,4 @@
-package com.v2ray.ang
+package com.xray.ang
 
 /**
  *
@@ -72,9 +72,9 @@ object AppConfig {
     const val PROTOCOL_HTTPS: String = "https://"
     const val PROTOCOL_FREEDOM: String = "freedom"
 
-    const val BROADCAST_ACTION_SERVICE = "com.v2ray.ang.action.service"
-    const val BROADCAST_ACTION_ACTIVITY = "com.v2ray.ang.action.activity"
-    const val BROADCAST_ACTION_WIDGET_CLICK = "com.v2ray.ang.action.widget.click"
+    const val BROADCAST_ACTION_SERVICE = "com.xray.ang.action.service"
+    const val BROADCAST_ACTION_ACTIVITY = "com.xray.ang.action.activity"
+    const val BROADCAST_ACTION_WIDGET_CLICK = "com.xray.ang.action.widget.click"
 
     const val TASKER_EXTRA_BUNDLE = "com.twofortyfouram.locale.intent.extra.BUNDLE"
     const val TASKER_EXTRA_STRING_BLURB = "com.twofortyfouram.locale.intent.extra.BLURB"
@@ -96,7 +96,7 @@ object AppConfig {
     const val v2rayNGWikiMode = "$v2rayNGUrl/wiki/Mode"
     const val v2rayNGPrivacyPolicy = "https://raw.githubusercontent.com/2dust/v2rayNG/master/CR.md"
     const val PromotionUrl = "aHR0cHM6Ly85LjIzNDQ1Ni54eXovYWJjLmh0bWw="
-    const val GeoUrl = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/"
+    const val GeoUrl = "https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/"
     const val TgChannelUrl = "https://t.me/github_2dust"
 
     const val DNS_PROXY = "1.1.1.1"

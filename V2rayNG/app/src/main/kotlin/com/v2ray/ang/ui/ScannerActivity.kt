@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.Manifest
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +11,11 @@ import android.view.MenuItem
 import androidx.activity.result.contract.ActivityResultContracts
 import com.tbruyelle.rxpermissions.RxPermissions
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.QRCodeDecoder
+import com.xray.ang.AppConfig
+import com.xray.ang.R
+import com.xray.ang.extension.toast
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.QRCodeDecoder
 import io.github.g00fy2.quickie.QRResult
 import io.github.g00fy2.quickie.ScanCustomCode
 import io.github.g00fy2.quickie.config.ScannerConfig

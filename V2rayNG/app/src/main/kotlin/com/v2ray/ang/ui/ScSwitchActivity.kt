@@ -1,9 +1,9 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
-import com.v2ray.ang.R
-import com.v2ray.ang.util.Utils
+import com.xray.ang.R
+import com.xray.ang.util.Utils
 import android.os.Bundle
-import com.v2ray.ang.service.V2RayServiceManager
+import com.xray.ang.service.V2RayServiceManager
 
 class ScSwitchActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

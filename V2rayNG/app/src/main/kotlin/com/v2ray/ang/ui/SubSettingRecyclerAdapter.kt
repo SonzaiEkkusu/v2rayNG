@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,13 +10,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ItemQrcodeBinding
-import com.v2ray.ang.databinding.ItemRecyclerSubSettingBinding
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.QRCodeDecoder
-import com.v2ray.ang.util.Utils
+import com.xray.ang.R
+import com.xray.ang.databinding.ItemQrcodeBinding
+import com.xray.ang.databinding.ItemRecyclerSubSettingBinding
+import com.xray.ang.extension.toast
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.QRCodeDecoder
+import com.xray.ang.util.Utils
 
 class SubSettingRecyclerAdapter(val activity: SubSettingActivity) :
     RecyclerView.Adapter<SubSettingRecyclerAdapter.MainViewHolder>() {

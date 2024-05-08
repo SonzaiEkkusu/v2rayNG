@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import android.content.Context
 import android.content.ContextWrapper

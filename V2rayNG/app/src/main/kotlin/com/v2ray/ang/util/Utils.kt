@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -18,12 +18,12 @@ import android.util.Patterns
 import android.webkit.URLUtil
 import androidx.appcompat.app.AppCompatDelegate
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.ANG_PACKAGE
-import com.v2ray.ang.BuildConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.service.V2RayServiceManager
+import com.xray.ang.AppConfig
+import com.xray.ang.AppConfig.ANG_PACKAGE
+import com.xray.ang.BuildConfig
+import com.xray.ang.R
+import com.xray.ang.extension.toast
+import com.xray.ang.service.V2RayServiceManager
 import java.io.IOException
 import java.net.*
 import java.util.*
