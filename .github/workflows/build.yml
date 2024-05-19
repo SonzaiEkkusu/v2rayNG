@@ -8,7 +8,6 @@ on:
         description: 'Xray core version or commit hash'
         required: false
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,10 +32,8 @@ jobs:
         go install golang.org/x/mobile/cmd/gomobile@latest
         echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
-
     - name: Setup Android environment
       uses: android-actions/setup-android@v3
-
 
     - name: Build dependencies
       run: |
@@ -61,3 +58,11 @@ jobs:
       with:
         name: apk
         path: ${{ github.workspace }}/V2rayNG/app/build/outputs/apk/debug/
+
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        files: ${{ github.workspace }}/V2rayNG/app/build/outputs/apk/debug/*.apk
