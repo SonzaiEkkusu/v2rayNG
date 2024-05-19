@@ -1,10 +1,10 @@
-package com.v2ray.ang
+package com.xray.ng
 
 import android.content.Context
 import androidx.multidex.MultiDexApplication
 import androidx.work.Configuration
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.util.Utils
+import com.xray.ng.util.Utils
 
 class AngApplication : MultiDexApplication(), Configuration.Provider {
     companion object {

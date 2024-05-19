@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ng.util
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -11,18 +11,18 @@ import com.google.gson.JsonSerializationContext
 import com.google.gson.JsonSerializer
 import com.google.gson.reflect.TypeToken
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.PROTOCOL_HTTP
-import com.v2ray.ang.AppConfig.PROTOCOL_HTTPS
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_MTU
-import com.v2ray.ang.R
-import com.v2ray.ang.dto.*
-import com.v2ray.ang.dto.V2rayConfig.Companion.DEFAULT_SECURITY
-import com.v2ray.ang.dto.V2rayConfig.Companion.TLS
-import com.v2ray.ang.extension.idnHost
-import com.v2ray.ang.extension.removeWhiteSpace
-import com.v2ray.ang.util.MmkvManager.KEY_SELECTED_SERVER
+import com.xray.ng.AppConfig
+import com.xray.ng.AppConfig.PROTOCOL_HTTP
+import com.xray.ng.AppConfig.PROTOCOL_HTTPS
+import com.xray.ng.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
+import com.xray.ng.AppConfig.WIREGUARD_LOCAL_MTU
+import com.xray.ng.R
+import com.xray.ng.dto.*
+import com.xray.ng.dto.V2rayConfig.Companion.DEFAULT_SECURITY
+import com.xray.ng.dto.V2rayConfig.Companion.TLS
+import com.xray.ng.extension.idnHost
+import com.xray.ng.extension.removeWhiteSpace
+import com.xray.ng.util.MmkvManager.KEY_SELECTED_SERVER
 import java.lang.reflect.Type
 import java.net.URI
 import java.util.*

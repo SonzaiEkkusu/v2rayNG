@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,13 +14,13 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequest
 import androidx.work.multiprocess.RemoteWorkManager
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AngApplication
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.service.SubscriptionUpdater
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
-import com.v2ray.ang.viewmodel.SettingsViewModel
+import com.xray.ng.AngApplication
+import com.xray.ng.AppConfig
+import com.xray.ng.R
+import com.xray.ng.service.SubscriptionUpdater
+import com.xray.ng.util.MmkvManager
+import com.xray.ng.util.Utils
+import com.xray.ng.viewmodel.SettingsViewModel
 import java.util.concurrent.TimeUnit
 
 class SettingsActivity : BaseActivity() {

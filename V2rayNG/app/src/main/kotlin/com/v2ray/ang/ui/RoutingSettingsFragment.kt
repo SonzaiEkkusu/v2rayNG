@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.Manifest
 import androidx.appcompat.app.AppCompatActivity.RESULT_OK
@@ -12,13 +12,13 @@ import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceManager
 import com.tbruyelle.rxpermissions.RxPermissions
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.FragmentRoutingSettingsBinding
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.extension.v2RayApplication
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ng.AppConfig
+import com.xray.ng.R
+import com.xray.ng.databinding.FragmentRoutingSettingsBinding
+import com.xray.ng.extension.toast
+import com.xray.ng.extension.v2RayApplication
+import com.xray.ng.util.MmkvManager
+import com.xray.ng.util.Utils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

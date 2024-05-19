@@ -1,11 +1,11 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.os.Bundle
-import com.v2ray.ang.R
+import com.xray.ng.R
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.databinding.ActivityRoutingSettingsBinding
+import com.xray.ng.AppConfig
+import com.xray.ng.databinding.ActivityRoutingSettingsBinding
 
 class RoutingSettingsActivity : BaseActivity() {
     private lateinit var binding: ActivityRoutingSettingsBinding

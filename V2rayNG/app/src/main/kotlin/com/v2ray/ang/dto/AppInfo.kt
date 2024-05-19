@@ -1,4 +1,4 @@
-package com.v2ray.ang.dto
+package com.xray.ng.dto
 
 import android.graphics.drawable.Drawable
 

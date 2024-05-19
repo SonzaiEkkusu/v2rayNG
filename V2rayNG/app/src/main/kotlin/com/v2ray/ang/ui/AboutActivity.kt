@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.Manifest
 import android.content.Intent
@@ -8,14 +8,14 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import com.tbruyelle.rxpermissions.RxPermissions
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.BuildConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityAboutBinding
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.SpeedtestUtil
-import com.v2ray.ang.util.Utils
-import com.v2ray.ang.util.ZipUtil
+import com.xray.ng.AppConfig
+import com.xray.ng.BuildConfig
+import com.xray.ng.R
+import com.xray.ng.databinding.ActivityAboutBinding
+import com.xray.ng.extension.toast
+import com.xray.ng.util.SpeedtestUtil
+import com.xray.ng.util.Utils
+import com.xray.ng.util.ZipUtil
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Locale

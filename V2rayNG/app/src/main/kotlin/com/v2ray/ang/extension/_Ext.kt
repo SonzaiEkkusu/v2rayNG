@@ -1,9 +1,9 @@
-package com.v2ray.ang.extension
+package com.xray.ng.extension
 
 import android.content.Context
 import android.os.Build
 import android.widget.Toast
-import com.v2ray.ang.AngApplication
+import com.xray.ng.AngApplication
 import me.drakeet.support.toast.ToastCompat
 import org.json.JSONObject
 import java.net.URI

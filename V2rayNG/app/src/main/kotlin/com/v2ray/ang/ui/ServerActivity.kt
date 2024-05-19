@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -8,25 +8,25 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AngApplication
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.PREF_ALLOW_INSECURE
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V6
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_MTU
-import com.v2ray.ang.R
-import com.v2ray.ang.dto.EConfigType
-import com.v2ray.ang.dto.ServerConfig
-import com.v2ray.ang.dto.V2rayConfig
-import com.v2ray.ang.dto.V2rayConfig.Companion.DEFAULT_PORT
-import com.v2ray.ang.dto.V2rayConfig.Companion.TLS
-import com.v2ray.ang.extension.removeWhiteSpace
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.MmkvManager.ID_MAIN
-import com.v2ray.ang.util.MmkvManager.KEY_SELECTED_SERVER
-import com.v2ray.ang.util.Utils
-import com.v2ray.ang.util.Utils.getIpv6Address
+import com.xray.ng.AngApplication
+import com.xray.ng.AppConfig
+import com.xray.ng.AppConfig.PREF_ALLOW_INSECURE
+import com.xray.ng.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
+import com.xray.ng.AppConfig.WIREGUARD_LOCAL_ADDRESS_V6
+import com.xray.ng.AppConfig.WIREGUARD_LOCAL_MTU
+import com.xray.ng.R
+import com.xray.ng.dto.EConfigType
+import com.xray.ng.dto.ServerConfig
+import com.xray.ng.dto.V2rayConfig
+import com.xray.ng.dto.V2rayConfig.Companion.DEFAULT_PORT
+import com.xray.ng.dto.V2rayConfig.Companion.TLS
+import com.xray.ng.extension.removeWhiteSpace
+import com.xray.ng.extension.toast
+import com.xray.ng.util.MmkvManager
+import com.xray.ng.util.MmkvManager.ID_MAIN
+import com.xray.ng.util.MmkvManager.KEY_SELECTED_SERVER
+import com.xray.ng.util.Utils
+import com.xray.ng.util.Utils.getIpv6Address
 
 class ServerActivity : BaseActivity() {
 

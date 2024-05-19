@@ -1,4 +1,4 @@
-package com.v2ray.ang;
+package com.xray.ng;
 
 import org.junit.Test;
 

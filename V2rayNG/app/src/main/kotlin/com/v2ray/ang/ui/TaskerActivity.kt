@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,15 +6,15 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import java.util.ArrayList
-import com.v2ray.ang.R
+import com.xray.ng.R
 import android.content.Intent
 import android.text.TextUtils
 import android.view.Menu
 import android.view.MenuItem
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.databinding.ActivityTaskerBinding
-import com.v2ray.ang.util.MmkvManager
+import com.xray.ng.AppConfig
+import com.xray.ng.databinding.ActivityTaskerBinding
+import com.xray.ng.util.MmkvManager
 
 class TaskerActivity : BaseActivity() {
     private lateinit var binding: ActivityTaskerBinding

@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ng.util
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

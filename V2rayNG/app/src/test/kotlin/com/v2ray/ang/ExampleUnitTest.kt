@@ -1,6 +1,6 @@
 import org.junit.Assert.*
 import org.junit.Test
-import com.v2ray.ang.util.Utils
+import com.xray.ng.util.Utils
 
 class UtilTest {
 

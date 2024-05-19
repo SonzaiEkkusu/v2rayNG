@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.Manifest
 import android.content.ActivityNotFoundException
@@ -27,18 +27,18 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.navigation.NavigationView
 import com.tbruyelle.rxpermissions.RxPermissions
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.ANG_PACKAGE
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivityMainBinding
-import com.v2ray.ang.dto.EConfigType
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.helper.SimpleItemTouchHelperCallback
-import com.v2ray.ang.service.V2RayServiceManager
-import com.v2ray.ang.util.AngConfigManager
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
-import com.v2ray.ang.viewmodel.MainViewModel
+import com.xray.ng.AppConfig
+import com.xray.ng.AppConfig.ANG_PACKAGE
+import com.xray.ng.R
+import com.xray.ng.databinding.ActivityMainBinding
+import com.xray.ng.dto.EConfigType
+import com.xray.ng.extension.toast
+import com.xray.ng.helper.SimpleItemTouchHelperCallback
+import com.xray.ng.service.V2RayServiceManager
+import com.xray.ng.util.AngConfigManager
+import com.xray.ng.util.MmkvManager
+import com.xray.ng.util.Utils
+import com.xray.ng.viewmodel.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import me.drakeet.support.toast.ToastCompat

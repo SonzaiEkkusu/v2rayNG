@@ -1,10 +1,10 @@
-package com.v2ray.ang.util
+package com.xray.ng.util
 
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.service.V2RayTestService
+import com.xray.ng.AppConfig
+import com.xray.ng.service.V2RayTestService
 import java.io.Serializable
 
 

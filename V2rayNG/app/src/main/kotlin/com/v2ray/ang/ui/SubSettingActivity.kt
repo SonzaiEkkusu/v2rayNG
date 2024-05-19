@@ -1,14 +1,14 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
-import com.v2ray.ang.R
+import com.xray.ng.R
 import android.os.Bundle
-import com.v2ray.ang.databinding.ActivitySubSettingBinding
-import com.v2ray.ang.dto.SubscriptionItem
-import com.v2ray.ang.util.MmkvManager
+import com.xray.ng.databinding.ActivitySubSettingBinding
+import com.xray.ng.dto.SubscriptionItem
+import com.xray.ng.util.MmkvManager
 
 class SubSettingActivity : BaseActivity() {
     private lateinit var binding: ActivitySubSettingBinding

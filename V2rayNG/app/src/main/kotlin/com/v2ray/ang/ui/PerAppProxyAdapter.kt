@@ -1,12 +1,12 @@
-package com.v2ray.ang.ui
+package com.xray.ng.ui
 
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ItemRecyclerBypassListBinding
-import com.v2ray.ang.dto.AppInfo
+import com.xray.ng.R
+import com.xray.ng.databinding.ItemRecyclerBypassListBinding
+import com.xray.ng.dto.AppInfo
 import java.util.*
 
 class PerAppProxyAdapter(val activity: BaseActivity, val apps: List<AppInfo>, blacklist: MutableSet<String>?) :

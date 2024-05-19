@@ -1,12 +1,12 @@
-package com.v2ray.ang.util
+package com.xray.ng.util
 
 import android.content.Context
 import android.os.SystemClock
 import android.text.TextUtils
 import android.util.Log
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.extension.responseLength
+import com.xray.ng.AppConfig
+import com.xray.ng.R
+import com.xray.ng.extension.responseLength
 import kotlinx.coroutines.isActive
 import libv2ray.Libv2ray
 import java.io.IOException
