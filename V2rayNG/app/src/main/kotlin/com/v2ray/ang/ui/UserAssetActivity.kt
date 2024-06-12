@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -18,15 +18,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.tbruyelle.rxpermissions.RxPermissions
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivitySubSettingBinding
-import com.v2ray.ang.databinding.ItemRecyclerUserAssetBinding
-import com.v2ray.ang.dto.AssetUrlItem
-import com.v2ray.ang.extension.toTrafficString
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivitySubSettingBinding
+import com.xray.ang.databinding.ItemRecyclerUserAssetBinding
+import com.xray.ang.dto.AssetUrlItem
+import com.xray.ang.extension.toTrafficString
+import com.xray.ang.extension.toast
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.File

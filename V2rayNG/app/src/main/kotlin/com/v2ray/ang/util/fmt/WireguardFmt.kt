@@ -1,11 +1,11 @@
-package com.v2ray.ang.util.fmt
+package com.xray.ang.util.fmt
 
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.dto.EConfigType
-import com.v2ray.ang.dto.ServerConfig
-import com.v2ray.ang.extension.idnHost
-import com.v2ray.ang.extension.removeWhiteSpace
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig
+import com.xray.ang.dto.EConfigType
+import com.xray.ang.dto.ServerConfig
+import com.xray.ang.extension.idnHost
+import com.xray.ang.extension.removeWhiteSpace
+import com.xray.ang.util.Utils
 import java.net.URI
 
 object WireguardFmt {

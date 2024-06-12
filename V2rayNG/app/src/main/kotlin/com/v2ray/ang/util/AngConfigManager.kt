@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -11,16 +11,16 @@ import com.google.gson.JsonSerializationContext
 import com.google.gson.JsonSerializer
 import com.google.gson.reflect.TypeToken
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.R
-import com.v2ray.ang.dto.*
-import com.v2ray.ang.util.MmkvManager.KEY_SELECTED_SERVER
-import com.v2ray.ang.util.fmt.ShadowsocksFmt
-import com.v2ray.ang.util.fmt.SocksFmt
-import com.v2ray.ang.util.fmt.TrojanFmt
-import com.v2ray.ang.util.fmt.VlessFmt
-import com.v2ray.ang.util.fmt.VmessFmt
-import com.v2ray.ang.util.fmt.WireguardFmt
+import com.xray.ang.AppConfig
+import com.xray.ang.R
+import com.xray.ang.dto.*
+import com.xray.ang.util.MmkvManager.KEY_SELECTED_SERVER
+import com.xray.ang.util.fmt.ShadowsocksFmt
+import com.xray.ang.util.fmt.SocksFmt
+import com.xray.ang.util.fmt.TrojanFmt
+import com.xray.ang.util.fmt.VlessFmt
+import com.xray.ang.util.fmt.VmessFmt
+import com.xray.ang.util.fmt.WireguardFmt
 import java.lang.reflect.Type
 import java.util.*
 

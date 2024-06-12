@@ -1,4 +1,4 @@
-package com.v2ray.ang.ui
+package com.xray.ang.ui
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -12,14 +12,14 @@ import androidx.work.PeriodicWorkRequest
 import androidx.work.multiprocess.RemoteWorkManager
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AngApplication
-import com.v2ray.ang.R
-import com.v2ray.ang.databinding.ActivitySubEditBinding
-import com.v2ray.ang.dto.SubscriptionItem
-import com.v2ray.ang.extension.toast
-import com.v2ray.ang.service.SubscriptionUpdater
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AngApplication
+import com.xray.ang.R
+import com.xray.ang.databinding.ActivitySubEditBinding
+import com.xray.ang.dto.SubscriptionItem
+import com.xray.ang.extension.toast
+import com.xray.ang.service.SubscriptionUpdater
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 import java.util.concurrent.TimeUnit
 
 class SubEditActivity : BaseActivity() {

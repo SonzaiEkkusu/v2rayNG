@@ -1,11 +1,11 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.dto.AssetUrlItem
-import com.v2ray.ang.dto.ServerAffiliationInfo
-import com.v2ray.ang.dto.ServerConfig
-import com.v2ray.ang.dto.SubscriptionItem
+import com.xray.ang.dto.AssetUrlItem
+import com.xray.ang.dto.ServerAffiliationInfo
+import com.xray.ang.dto.ServerConfig
+import com.xray.ang.dto.SubscriptionItem
 import java.net.URI
 
 object MmkvManager {

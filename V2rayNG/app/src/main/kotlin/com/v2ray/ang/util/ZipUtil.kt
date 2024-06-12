@@ -1,4 +1,4 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import java.io.BufferedOutputStream
 import java.io.File

@@ -1,9 +1,9 @@
-package com.v2ray.ang.dto
+package com.xray.ang.dto
 
-import com.v2ray.ang.AppConfig.TAG_PROXY
-import com.v2ray.ang.AppConfig.TAG_BLOCKED
-import com.v2ray.ang.AppConfig.TAG_DIRECT
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig.TAG_PROXY
+import com.xray.ang.AppConfig.TAG_BLOCKED
+import com.xray.ang.AppConfig.TAG_DIRECT
+import com.xray.ang.util.Utils
 
 data class ServerConfig(
         val configVersion: Int = 3,

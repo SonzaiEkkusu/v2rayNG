@@ -1,20 +1,20 @@
-package com.v2ray.ang.util
+package com.xray.ang.util
 
 import android.content.Context
 import android.text.TextUtils
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.AppConfig.PROTOCOL_FREEDOM
-import com.v2ray.ang.AppConfig.TAG_DIRECT
-import com.v2ray.ang.AppConfig.TAG_FRAGMENT
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
-import com.v2ray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V6
-import com.v2ray.ang.dto.EConfigType
-import com.v2ray.ang.dto.ERoutingMode
-import com.v2ray.ang.dto.V2rayConfig
-import com.v2ray.ang.dto.V2rayConfig.Companion.DEFAULT_NETWORK
-import com.v2ray.ang.dto.V2rayConfig.Companion.HTTP
+import com.xray.ang.AppConfig
+import com.xray.ang.AppConfig.PROTOCOL_FREEDOM
+import com.xray.ang.AppConfig.TAG_DIRECT
+import com.xray.ang.AppConfig.TAG_FRAGMENT
+import com.xray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V4
+import com.xray.ang.AppConfig.WIREGUARD_LOCAL_ADDRESS_V6
+import com.xray.ang.dto.EConfigType
+import com.xray.ang.dto.ERoutingMode
+import com.xray.ang.dto.V2rayConfig
+import com.xray.ang.dto.V2rayConfig.Companion.DEFAULT_NETWORK
+import com.xray.ang.dto.V2rayConfig.Companion.HTTP
 
 object V2rayConfigUtil {
     private val serverRawStorage by lazy {

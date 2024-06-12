@@ -1,14 +1,14 @@
-package com.v2ray.ang.util.fmt
+package com.xray.ang.util.fmt
 
 import android.text.TextUtils
 import com.tencent.mmkv.MMKV
-import com.v2ray.ang.AppConfig
-import com.v2ray.ang.dto.EConfigType
-import com.v2ray.ang.dto.ServerConfig
-import com.v2ray.ang.dto.V2rayConfig
-import com.v2ray.ang.extension.idnHost
-import com.v2ray.ang.util.MmkvManager
-import com.v2ray.ang.util.Utils
+import com.xray.ang.AppConfig
+import com.xray.ang.dto.EConfigType
+import com.xray.ang.dto.ServerConfig
+import com.xray.ang.dto.V2rayConfig
+import com.xray.ang.extension.idnHost
+import com.xray.ang.util.MmkvManager
+import com.xray.ang.util.Utils
 import java.net.URI
 
 object VlessFmt {

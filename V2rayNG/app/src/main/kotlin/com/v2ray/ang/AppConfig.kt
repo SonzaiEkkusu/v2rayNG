@@ -1,4 +1,4 @@
-package com.v2ray.ang
+package com.xray.ang
 
 /**
  *
@@ -73,9 +73,9 @@ object AppConfig {
     const val PROTOCOL_HTTPS: String = "https://"
     const val PROTOCOL_FREEDOM: String = "freedom"
 
-    const val BROADCAST_ACTION_SERVICE = "com.v2ray.ang.action.service"
-    const val BROADCAST_ACTION_ACTIVITY = "com.v2ray.ang.action.activity"
-    const val BROADCAST_ACTION_WIDGET_CLICK = "com.v2ray.ang.action.widget.click"
+    const val BROADCAST_ACTION_SERVICE = "com.xray.ang.action.service"
+    const val BROADCAST_ACTION_ACTIVITY = "com.xray.ang.action.activity"
+    const val BROADCAST_ACTION_WIDGET_CLICK = "com.xray.ang.action.widget.click"
 
     const val TASKER_EXTRA_BUNDLE = "com.twofortyfouram.locale.intent.extra.BUNDLE"
     const val TASKER_EXTRA_STRING_BLURB = "com.twofortyfouram.locale.intent.extra.BLURB"
